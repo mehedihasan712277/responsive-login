@@ -1,0 +1,151 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Poppins;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+button {
+    border: none;
+    border-radius: 20px;
+    padding: 15px 40px;
+    text-transform: uppercase;
+    color: white;
+}
+
+.container {
+    width: 80%;
+    /* margin: 100px auto 0; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    box-shadow: 2px 2px 105px gray;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.in {
+    background-color: rgb(255, 80, 109);
+}
+
+.up {
+    background-color: transparent;
+    border: 1px solid white;
+    box-sizing: border-box;
+}
+
+.part:last-child {
+    padding: 60px;
+    text-align: center;
+}
+
+.part:first-child {
+    padding: 60px;
+    background-color: rgb(255, 80, 109);
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.headline1,
+.headline2 {
+    font-family: Roboto;
+    font-weight: 900;
+    font-size: 2rem;
+}
+
+.icons {
+    margin: 10px 0;
+}
+
+.subtitle1 {
+    margin-bottom: 10px;
+    color: #474747;
+    font-size: 14px;
+}
+
+.subtitle2 {
+    margin: 20px 0;
+    font-size: 1rem;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.icon {
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid grey;
+    color: grey;
+    /* box-shadow: 2px 2px 4px grey; */
+    width: 30px;
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    background-color: rgba(128, 128, 128, 0.336);
+    border-radius: 5px;
+    padding: 10px;
+    border: none;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+a {
+    color: #474747;
+    text-decoration: none;
+}
+
+@media screen and (max-width : 768px) {
+    body {
+        padding: 20px 0;
+    }
+
+    .container {
+        grid-template-columns: 1fr;
+
+    }
+
+    .subtitle2 {
+        font-size: .8rem;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .container {
+        width: 100%;
+    }
+
+    #part {
+        padding: 30px 20px;
+    }
+
+    .headline1,
+    .headline2 {
+        font-size: 1rem;
+    }
+
+    .subtitle1,
+    .subtitle2 {
+        font-size: .8rem;
+    }
+
+    button {
+        padding: 10px 25px;
+        font-size: .5rem;
+    }
+}
