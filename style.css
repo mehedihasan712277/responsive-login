@@ -126,8 +126,13 @@ a {
 }
 
 @media screen and (max-width: 425px) {
+    body {
+        padding: 0;
+    }
+
     .container {
         width: 100%;
+        border-radius: 0;
     }
 
     #part {
